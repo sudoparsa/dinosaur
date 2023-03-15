@@ -1,0 +1,21 @@
+python main_dinosaur.py --arch vit_small --patch_size 8 --pretrained_weights ../dino/train1/checkpoint.pth --num_slots 2 --dim 384  --batch_size 512 --epochs 300 --data_path ../dino/bcmnist8_dino
+
+
+arch=vit_small
+ patch_size=8
+ pretrained_weights=../dino/train1/checkpoint.pth
+ checkpoint_key=teacher
+ num_slots=2
+ dim=384
+ iters=3
+ epsilon=1e-08
+ slot_hdim=128
+ batch_size=512
+ epochs=300
+ lr=0.0005
+ weight_decay=1e-05
+ data_path=../dino/bcmnist8_dino
+ output_dir=.
+ saveckp_freq=20
+ seed=42
+ num_workers=2
